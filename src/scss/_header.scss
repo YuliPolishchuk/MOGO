@@ -1,0 +1,14 @@
+.header {
+  background-image: url(../img/header__background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  height: 100vh;
+
+  h1 {
+    font-family: $bold-family;
+  }
+  p {
+    font-family: $italic-family;
+  }
+}
