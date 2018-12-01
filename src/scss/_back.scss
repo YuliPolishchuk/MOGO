@@ -2,4 +2,16 @@
   &--grey {
     background-color: $background-grey;
   }
+
+  &--clients {
+    background: 
+      linear-gradient(
+        rgba(255, 255, 255, 0.85), 
+        rgba(255, 255, 255, 0.85)), 
+      url("../img/Layer-53.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+
 }
