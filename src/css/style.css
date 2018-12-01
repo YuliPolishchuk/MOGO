@@ -14,6 +14,48 @@ html {
   max-width: 1200px;
 }
 
+.title {
+  text-align: center;
+}
+
+.title__italic {
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: black;
+  text-transform: capitalize;
+}
+
+.title__bold {
+  position: relative;
+  margin: 20px 0 84px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.title__bold::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: -40px;
+  -webkit-transform: translate(-50%, -2px);
+  transform: translate(-50%, -2px);
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+}
+
+.title__text {
+  margin-bottom: 90px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  color: #999999;
+}
+
 .header {
   background-image: url(../img/header__background.jpg);
   background-size: cover;
@@ -32,6 +74,13 @@ html {
 
 .back--grey {
   background-color: #f8f8f8;
+}
+
+.back--clients {
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../img/Layer-53.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 
 .slider {
@@ -77,49 +126,133 @@ html {
   height: 2px;
   width: 60px;
   background: #f38181;
-  margin: 0 auto;
-  padding: 115px 0;
-  width: 70%;
-  max-width: 1200px;
 }
 
-.title {
-  text-align: center;
-}
-
-.title__italic {
-  font-family: "Kaushan Script", cursive;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  color: #000000;
-}
-
-.title__bold {
+.comments {
   position: relative;
-  margin: 20px 0 84px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.875rem;
-  line-height: 1.875rem;
-  text-transform: uppercase;
-  color: #000000;
+  padding: 85px 35px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.title__bold::after {
+@media screen and (max-width: 576px) {
+  .comments {
+    padding: 35px 10px 0 5px;
+  }
+}
+
+.comments__item {
+  flex-grow: 1;
+  margin-right: 75px;
+  margin-bottom: 60px;
+  flex-basis: 400px;
+  z-index: 999;
+  display: flex;
+  flex-wrap: no-wrap;
+}
+
+@media screen and (max-width: 992px) {
+  .comments__item {
+    flex-basis: 350px;
+    margin-right: 35px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .comments__item {
+    margin-right: 0;
+  }
+  .comments__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.comments__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.comments__pic {
+  flex-basis: 110px;
+  flex-grow: 0;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+}
+
+.comments__pic--dix {
+  background-image: url("../img/Layer-47.jpg");
+  background-position: 50% 10%;
+}
+
+.comments__pic--castillo {
+  background-image: url("../img/Layer-50.jpg");
+  background-position: 50% 10%;
+}
+
+.comments__pic--karvounis {
+  background-image: url("../img/Layer-49.jpg");
+  background-position: 57.5% 50%;
+}
+
+.comments__pic--petrucci {
+  background-image: url("../img/Layer-51.jpg");
+  background-position: 26% 10.5%;
+}
+
+.comments__block {
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-left: 30px;
+  padding-top: 10px;
+  text-align: left;
+}
+
+@media screen and (max-width: 576px) {
+  .comments__block {
+    margin-left: 10px;
+  }
+}
+
+.comments__name {
+  font-size: 0.88rem;
+  line-height: 0.88rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.comments__position {
+  position: relative;
+  font-size: 0.94rem;
+  line-height: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 43px;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+.comments__position::after {
   position: absolute;
   content: "";
-  left: 50%;
-  bottom: -40px;
-  -webkit-transform: translate(-50%, -2px);
-  transform: translate(-50%, -2px);
+  left: 0;
+  bottom: -20px;
   width: 60px;
   height: 3px;
   background-color: #f38181;
 }
 
-.title__text {
-  margin-bottom: 90px;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.9375rem;
+.comments__text {
+  font-size: 0.94rem;
   line-height: 1.5rem;
-  color: #999999;
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+}
+
+@media screen and (max-width: 320px) {
+  .comments__text {
+    text-align: justify;
+  }
 }
