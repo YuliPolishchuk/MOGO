@@ -1,0 +1,43 @@
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__image {
+    border: 2px solid $color-sky;
+    padding: 37px;
+    margin-left: 70px;
+  }
+
+  &__content {
+    margin-left: 60px;
+    margin-right: 70px;
+    p {
+      font-family: $text-family;
+      font-style: italic;
+      font-weight: 200;
+      font-size: 1.2rem;
+      line-height: 1.25rem;
+      color: $par-color;    
+    }
+
+    h3 {
+      font-family: $italic-family;
+      color: $color-black;
+      position: relative;
+      font-size: 1.5rem;
+      padding-left: 70px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        top: 50%;
+        left: -1px;
+        height: 2px;
+        width: 60px;
+        background: $color-red;
+      }   
+    }
+  }
+}
