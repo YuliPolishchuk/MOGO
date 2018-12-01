@@ -3,27 +3,15 @@
     background-color: $background-grey;
   }
 
-  &--images {
-    z-index: 0;
-    position: relative;
+  &--clients {
+    background: 
+      linear-gradient(
+        rgba(255, 255, 255, 0.85), 
+        rgba(255, 255, 255, 0.85)), 
+      url("../img/Layer-53.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-
-    &::before {
-      z-index: 0;
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(255,255,255,0.85);
-    }
-  }
-
-  &--clients {
-    background-image: url("../img/Layer-53.jpg");
   }
 
 }

@@ -1,11 +1,12 @@
 .comments {
+  position: relative;
   padding: 85px 35px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 
   @media screen and (max-width: $xs) {
-    padding: 35px 5px;
+    padding: 35px 10px 0 5px;
   }
 
   &__item {
@@ -24,6 +25,10 @@
 
     @media screen and (max-width: $xs) {
       margin-right: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     &:nth-child(2n) {
@@ -43,6 +48,23 @@
       background-image: url("../img/Layer-47.jpg");  
       background-position: 50% 10%; 
     }
+
+    &--castillo {
+      background-image: url("../img/Layer-50.jpg");  
+      background-position: 50% 10%; 
+    }
+
+    &--karvounis {
+      background-image: url("../img/Layer-49.jpg");  
+      background-position: 57.5% 50%;
+    }
+
+    &--petrucci {
+      background-image: url("../img/Layer-51.jpg");  
+      background-position: 26% 10.5%;
+    }
+
+
   }
 
   &__block {
@@ -65,12 +87,6 @@
     margin-bottom: 12px;
     text-transform: uppercase;
     color: $color-lightblack;
-
-    @media screen and (max-width: $xs) {
-      font-size: 0.7rem;
-      line-height: 0.7rem;
-    }
-
   }
 
   &__position {
@@ -93,10 +109,10 @@
       background-color: $color-red;
     }
 
-    @media screen and (max-width: 320px) {
-      font-size: 0.75rem;
-      line-height: 1.25rem;
-    }
+    // @media screen and (max-width: 320px) {
+    //   font-size: 0.75rem;
+    //   line-height: 1.25rem;
+    // }
   }
 
   &__text {
@@ -107,8 +123,7 @@
     color: $color-lightblack;    
   
     @media screen and (max-width: 320px) {
-      font-size: 0.75rem;
-      line-height: 1.25rem;
+      text-align: justify;
     }
   }
   
