@@ -9,6 +9,7 @@ html {
 }
 
 .wrap {
+  margin: 0 auto;
   padding: 115px 0;
   max-width: 1200px;
 }
