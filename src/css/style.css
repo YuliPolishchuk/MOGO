@@ -16,6 +16,7 @@ html {
 }
 
 .title {
+  margin: 0 auto;
   max-width: 1000px;
   text-align: center;
 }
@@ -50,11 +51,162 @@ html {
 }
 
 .title__text {
-  margin-bottom: 90px;
+  padding-bottom: 90px;
   font-family: "Roboto", sans-serif;
   font-size: 0.9375rem;
   line-height: 1.5rem;
   color: #999999;
+}
+
+.images-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.images-row__image {
+  position: relative;
+  width: 22vw;
+  max-width: 380px;
+  background: 50% 50% no-repeat;
+  background-size: cover;
+  transition-duration: 0.5s;
+}
+
+.images-row__image--about {
+  height: 14.4737vw;
+  max-height: 250px;
+}
+
+.images-row__image--about-first {
+  background-image: url("../img/Layer-44.jpg");
+}
+
+.images-row__image--about-second {
+  background-image: url("../img/Layer-39.jpg");
+}
+
+.images-row__image--about-third {
+  background-image: url("../img/Layer-41.jpg");
+}
+
+.images-row__image--team {
+  height: 27.2105vw;
+  max-height: 470px;
+}
+
+.images-row__image--team-dix {
+  background-image: url("../img/Layer-16.jpg");
+}
+
+.images-row__image--team-campbell {
+  background-image: url("../img/Layer-19.jpg");
+}
+
+.images-row__image--team-fertig {
+  background-image: url("../img/Layer-18.jpg");
+}
+
+.images-row__image--hover:hover {
+  -webkit-transform: translate(-8px, -8px);
+  transform: translate(-8px, -8px);
+  box-shadow: 8px 8px 0 0 #95e1d3;
+}
+
+.images-row__image--hover:hover .gradient {
+  opacity: 1;
+}
+
+.images-row__header {
+  margin: 20px 0 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.images-row__text {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 0.9375rem;
+  line-height: 0.9375rem;
+  color: #999999;
+  text-align: center;
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(180deg, rgba(243, 129, 129, 0.85), rgba(252, 227, 138, 0.85));
+}
+
+.gradient--for-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+.gradient--cursor {
+  cursor: pointer;
+}
+
+.inside-image {
+  display: flex;
+  flex-direction: column;
+}
+
+.inside-image--flex-row {
+  flex-direction: row;
+}
+
+.inside-image__users-logo {
+  margin: 0 auto;
+  display: block;
+}
+
+.inside-image__span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.inside-image__social {
+  display: flex;
+  box-sizing: content-box;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #fce38a;
+  transition-duration: 0.25s;
+}
+
+.inside-image__social:not(:last-child) {
+  border-right: 1px solid #f38181;
+}
+
+.inside-image__social:hover {
+  background-color: #f38181;
+}
+
+.inside-image__social:hover .inside-image__logo {
+  fill: #ffffff;
+}
+
+.inside-image__logo {
+  fill: #f38181;
+  transition-duration: 0.25s;
 }
 
 .header {

@@ -1,0 +1,79 @@
+.images-row {
+  display: flex;
+  justify-content: space-between;
+
+  &__image {
+    position: relative;
+    width: 22vw;
+    max-width: 380px;
+    background: 50% 50% no-repeat;
+    background-size: cover;
+    transition-duration: 0.5s;
+
+    &--about {
+      height: 14.4737vw;
+      max-height: 250px;
+
+      &-first {
+        background-image: url("../img/Layer-44.jpg");
+      }
+
+      &-second {
+        background-image: url("../img/Layer-39.jpg");
+      }
+
+      &-third {
+        background-image: url("../img/Layer-41.jpg");
+      }
+    }
+
+    &--team {
+      height: 27.2105vw;
+      max-height: 470px;
+
+      &-dix {
+        background-image: url("../img/Layer-16.jpg");
+      }
+
+      &-campbell {
+        background-image: url("../img/Layer-19.jpg");
+      }
+
+      &-fertig {
+        background-image: url("../img/Layer-18.jpg");
+      }
+    }
+
+    &--hover {
+      &:hover {
+        transform: translate(-8px, -8px);
+        box-shadow: 8px 8px 0 0 $color-sky;
+
+        .gradient {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__header {
+    margin: 20px 0 10px;
+    font-family: $bold-family;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    color: $color-black;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-family: $roboto-family;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.9375rem;
+    line-height: 0.9375rem;
+    color: $par-color;
+    text-align: center;
+  }
+}
