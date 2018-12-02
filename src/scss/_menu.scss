@@ -1,0 +1,24 @@
+.menu {
+  display: flex;
+  list-style-type: none;
+  float: right;
+ 
+  &__item{
+    margin-right: 30px;
+  }
+
+  &__link {
+    color: $color-white;
+    text-decoration: none;
+    font-family: $bold-family;
+    font-size: 0.7rem;
+    border-bottom: 0px solid $color-yellow;
+    padding-bottom: 5px;
+    transition: 0.5s;
+
+    &:hover {
+      color: $color-yellow;
+      border-bottom: 3px solid $color-yellow;
+    }
+  }
+}
