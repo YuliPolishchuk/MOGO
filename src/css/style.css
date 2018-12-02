@@ -15,6 +15,14 @@ html {
   max-width: 1200px;
 }
 
+.wrap--width100 {
+  width: 100%;
+}
+
+.wrap--no-margin {
+  margin: 0;
+}
+
 .title {
   margin: 0 auto;
   max-width: 1000px;
@@ -209,6 +217,21 @@ html {
 
 .back--grey {
   background-color: #f8f8f8;
+}
+
+.back--clients {
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../img/Layer-53.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.back--pale-blue {
+  background-color: #95e1d3;
+}
+
+.back--nopadding {
+  padding: 0;
 }
 
 .slider {
@@ -534,6 +557,65 @@ html {
 .inside-image__social-logo {
   fill: #f38181;
   transition-duration: 0.25s;
+}
+
+.stat {
+  display: flex;
+  justify-content: center;
+}
+
+.stat__item {
+  padding: 90px 0;
+  width: 240px;
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
+  text-align: center;
+}
+
+.stat__item:last-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+@media screen and (max-width: 768px) {
+  .stat__item {
+    padding: 45px 0;
+  }
+}
+
+.stat__number {
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .stat__number {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .stat__number {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+.stat__text {
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 576px) {
+  .stat__text {
+    font-size: 0.70rem;
+    line-height: 0.70rem;
+  }
 }
 
 .comments {
