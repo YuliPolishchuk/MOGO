@@ -674,3 +674,138 @@ html {
     text-align: justify;
   }
 }
+
+.post {
+  padding: 45px 10px 0 20px;
+  font-size: 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 1200px) {
+  .post {
+    justify-content: space-between;
+  }
+}
+
+.post__item {
+  display: inline-block;
+  width: 290px;
+  text-align: left;
+  padding: 0 10px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 403.2px) {
+  .post__item {
+    width: 340px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .post__item {
+    width: 380px;
+  }
+}
+
+.post__pic {
+  position: relative;
+  width: 290px;
+  height: 240px;
+  margin-bottom: 15px;
+  background-image: url("../img/Layer-54.jpg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 403.2px) {
+  .post__pic {
+    width: 340px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .post__pic {
+    width: 380px;
+  }
+}
+
+.post__pic--laptop {
+  background-image: url("../img/Layer-55.jpg");
+  background-position: center;
+}
+
+.post__pic--tablet {
+  background-image: url("../img/Layer-57.jpg");
+  background-position: center;
+}
+
+.post__block {
+  position: absolute;
+  padding: 15px 0;
+  bottom: 10px;
+  left: -10px;
+  width: 60px;
+  height: 70px;
+  text-align: center;
+}
+
+.post__date {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  color: #ffffff;
+}
+
+.post__month {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.93rem;
+  line-height: 0.93rem;
+  color: #ffffff;
+}
+
+.post__title {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.post__text {
+  color: #999999;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+
+.post__sub {
+  display: inline-block;
+  padding-left: 25px;
+  margin-right: 20px;
+  background-size: 10 20;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+}
+
+.post__sub--views {
+  background-image: url("../img/SVG/VIEW.svg");
+}
+
+.post__sub--comments {
+  background-image: url("../img/SVG/SPEECH-BUBBLE-2.svg");
+}
