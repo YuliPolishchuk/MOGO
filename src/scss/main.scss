@@ -1,7 +1,10 @@
 @import "reset";
-@import "variables";
+@import 'variables';
 @import "wrap";
 @import "title";
+
+@import "menu";
+@import "list";
 
 @import "header";
 @import "back";
@@ -11,5 +14,3 @@
 @import "inside-image";
 
 @import "stat";
-@import "comments";
-

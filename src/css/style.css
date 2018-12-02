@@ -58,6 +58,85 @@ html {
   color: #999999;
 }
 
+.header {
+  background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url(../img/header__background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  height: 100vh;
+  color: #fff;
+  padding-top: 30px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__nav {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.header__center {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 6rem;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 6rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  position: relative;
+}
+
+.header__title::after {
+  content: "";
+  position: absolute;
+  left: 45%;
+  bottom: -25px;
+  height: 2px;
+  width: 60px;
+  background: #fff;
+}
+
+.header__text {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2.5rem;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header__btn {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  padding: 5px 10px;
+  border: 2px solid #fff;
+  font-weight: 600;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  transition: 1s;
+}
+
+.header__btn:hover {
+  color: #fce38a;
+  border-color: #fce38a;
+}
+
+.back {
+  padding: 70px 0;
+
 .images-row {
   display: flex;
   justify-content: space-between;
@@ -79,6 +158,176 @@ html {
 
 .images-row__image--about-first {
   background-image: url("../img/Layer-44.jpg");
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.slider__itemSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.slider__image {
+  margin-left: 60px;
+}
+
+.slider__image--border {
+  border: 3px solid #95e1d3;
+  padding: 37px;
+}
+
+.slider__text {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  line-height: 2rem;
+  color: #999999;
+}
+
+.slider__content {
+  margin-right: 50px;
+  margin-left: 40px;
+}
+
+.slider__title {
+  font-family: "Kaushan Script", cursive;
+  color: #000000;
+  position: relative;
+  font-size: 1.5rem;
+  padding-left: 70px;
+  margin-top: 20px;
+}
+
+.slider__title:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  height: 3px;
+  width: 60px;
+  background: #f38181;
+}
+
+.slider__prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  transition: 0.6s;
+  left: 10%;
+  color: #999999;
+}
+
+.slider__next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  transition: 0.6s;
+  right: 10%;
+  color: #999999;
+}
+
+.slider__fade {
+  -webkit-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  float: right;
+}
+
+.menu__item {
+  margin-right: 30px;
+}
+
+.menu__link {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  border-bottom: 0px solid #fce38a;
+  padding-bottom: 5px;
+  transition: 0.5s;
+}
+
+.menu__link:hover {
+  color: #fce38a;
+  border-bottom: 3px solid #fce38a;
+}
+
+.list {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.list__item {
+  margin-right: 30px;
+}
+
+.list__link {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  border-bottom: 0px solid #fce38a;
+  padding-bottom: 5px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.list__link span {
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+.list__link::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  background: #fff;
+  top: -15px;
+  opacity: 0.7;
 }
 
 .images-row__image--about-second {

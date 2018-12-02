@@ -1,14 +1,75 @@
 .header {
-  background-image: url(../img/header__background.jpg);
+  background-image:linear-gradient(to bottom, rgba(243,129,129,0.9),rgba(252,227,138,0.9)), url(../img/header__background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: 50%;
   height: 100vh;
+  color: $color-white;
+  padding-top: 30px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  h1 {
-    font-family: $bold-family;
+  &__nav {
+    margin: 0 auto;
+    width: 70%;
   }
-  p {
+
+  &__center {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: $bold-family;
+    font-size: 6rem;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 6rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 45%;
+      bottom: -25px;
+      height: 2px;
+      width: 60px;
+      background: $color-white;
+    }
+  }
+
+  &__text {
     font-family: $italic-family;
+    font-size: 2.5rem;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__btn {
+    text-decoration: none;
+    color: $color-white;
+    font-family: $bold-family;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    padding: 5px 10px;
+    border: 2px solid $color-white;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    transition: 1s;
+
+    &:hover {
+      color: $color-yellow;
+      border-color: $color-yellow;
+    }
   }
 }
