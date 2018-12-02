@@ -16,7 +16,7 @@
     flex-basis: 400px;
     z-index: 999;
     display: flex;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
 
     @media screen and (max-width: $m) {
       flex-basis: 350px;
