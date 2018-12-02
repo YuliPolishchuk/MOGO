@@ -1,0 +1,167 @@
+.bottom {
+  margin-bottom: 70px;
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+  &__item {
+    flex-grow: 1;
+    text-align: left;
+
+    &--mogo {
+    flex-basis: 300px;
+    }
+  }
+
+  &__logo {
+    font-family: $bold-family;
+    font-size: 2.875rem;
+    line-height: 2.875rem;
+    font-weight: bold;
+    color: $lighter-gray;
+    margin-bottom: 40px; 
+  }
+  
+  &__text {
+    font-family: $roboto-family;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    color: $lighter-gray;
+    margin-bottom: 50px;
+  }
+
+  &__followers {
+    font-family: $bold-family;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    font-weight: bold;
+    color: $color-lightblack;
+    margin-bottom: 20px; 
+    padding-bottom: 20px;
+    border-bottom: 1px solid $light-gray;
+  }
+
+  &__simple {
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    font-weight: normal;
+  }
+
+  &__line {
+    font-family: $roboto-family;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    font-style: italic;
+    color: $par-color;
+    margin-right: 20px;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px; 
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--fb {
+      background-image: url("../img/SVG/facebook.svg");
+    }
+
+    &--tw {
+      background-image: url("../img/SVG/twitter.svg");
+    }
+
+    &--ig {
+      background-image: url("../img/SVG/instagram.svg");
+    }
+
+    &--pt {
+      background-image: url("../img/SVG/pinterest.svg");
+    }
+
+    &--gp {
+      background-image: url("../img/SVG/google-plus.svg");
+    }
+
+    &--yt {
+      background-image: url("../img/SVG/youtube.svg");
+    }
+
+    &--dr {
+      background-image: url("../img/SVG/dribbble.svg");
+    }
+
+    &--tb {
+      background-image: url("../img/SVG/tumblr.svg");
+    }
+  }
+
+  &__form {
+    display: flex;
+    justify-content: flex-start;
+
+    @media screen and (min-width: $xs + 1px) {
+      max-width: 380px;      
+    }
+
+    @media screen and (max-width: $xs) {
+      flex-direction: column;
+      justify-content: center;      
+    }
+  }
+
+  &__email {
+    flex-grow: 3;
+    flex-basis: 180px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: $color-white;
+    font-family: $roboto-family;
+    font-size: 0.9375rem;
+    line-height: 40px;
+    font-style: italic;
+    color: $lighter-gray;
+    border: 1px solid $lighter-gray;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    @media screen and (max-width: $xs) {
+      flex-grow: 1;
+      flex-basis: 0;      
+    }
+  } 
+
+  &__btn {
+    flex-grow: 2;
+    height: 40px;
+    font-family: $bold-family;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 40px;
+    color: $color-white;
+    background-color: $color-sky;
+    transition: all .5s;
+    border: 1px solid $lighter-gray;
+    border-left: 0;
+    cursor: pointer;
+
+    @media screen and (max-width: $xs) {
+      flex-grow: 1;      
+    }
+
+    &:hover {
+      color: $color-sky;
+      background-color: $color-white;  
+    }
+  } 
+}

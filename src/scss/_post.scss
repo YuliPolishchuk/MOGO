@@ -1,5 +1,5 @@
 .post {
-  padding: 45px 10px 0 20px;
+  // padding: 45px 10px 0 20px;
   font-size: 0;
   text-align: center;
   display: flex;
@@ -15,19 +15,23 @@
     width: 290px;
     text-align: left;
     padding: 0 10px;
-    margin-bottom: 50px;
+
+    box-sizing: content-box;
 
     @media screen and (min-width: $xs*0.7) {
-      // margin-right: 15px;
       width: 340px;
-      
-      // &:last-child {
-      //   margin-right: 0;
-      // }
     }
 
     @media screen and (min-width: $xs) {
       width: 380px;
+    }
+
+    @media screen and (max-width: $l) {
+      margin-bottom: 50px;
+
+      &:last-child {
+        margin-bottom: 0;  
+      }
     }
   }
 

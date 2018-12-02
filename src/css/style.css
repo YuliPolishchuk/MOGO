@@ -23,6 +23,10 @@ html {
   margin: 0;
 }
 
+.wrap--padding80 {
+  padding: 80px 0 0;
+}
+
 .title {
   margin: 0 auto;
   max-width: 1000px;
@@ -676,7 +680,6 @@ html {
 }
 
 .post {
-  padding: 45px 10px 0 20px;
   font-size: 0;
   text-align: center;
   display: flex;
@@ -695,7 +698,7 @@ html {
   width: 290px;
   text-align: left;
   padding: 0 10px;
-  margin-bottom: 50px;
+  box-sizing: content-box;
 }
 
 @media screen and (min-width: 403.2px) {
@@ -707,6 +710,15 @@ html {
 @media screen and (min-width: 576px) {
   .post__item {
     width: 380px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .post__item {
+    margin-bottom: 50px;
+  }
+  .post__item:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -808,4 +820,200 @@ html {
 
 .post__sub--comments {
   background-image: url("../img/SVG/SPEECH-BUBBLE-2.svg");
+}
+
+.bottom {
+  margin-bottom: 70px;
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.bottom__item {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.bottom__item--mogo {
+  flex-basis: 300px;
+}
+
+.bottom__logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.875rem;
+  line-height: 2.875rem;
+  font-weight: bold;
+  color: #cccccc;
+  margin-bottom: 40px;
+}
+
+.bottom__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  color: #cccccc;
+  margin-bottom: 50px;
+}
+
+.bottom__followers {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.bottom__simple {
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  font-weight: normal;
+}
+
+.bottom__line {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  font-style: italic;
+  color: #999999;
+  margin-right: 20px;
+}
+
+.bottom__icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.bottom__icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bottom__icon--fb {
+  background-image: url("../img/SVG/facebook.svg");
+}
+
+.bottom__icon--tw {
+  background-image: url("../img/SVG/twitter.svg");
+}
+
+.bottom__icon--ig {
+  background-image: url("../img/SVG/instagram.svg");
+}
+
+.bottom__icon--pt {
+  background-image: url("../img/SVG/pinterest.svg");
+}
+
+.bottom__icon--gp {
+  background-image: url("../img/SVG/google-plus.svg");
+}
+
+.bottom__icon--yt {
+  background-image: url("../img/SVG/youtube.svg");
+}
+
+.bottom__icon--dr {
+  background-image: url("../img/SVG/dribbble.svg");
+}
+
+.bottom__icon--tb {
+  background-image: url("../img/SVG/tumblr.svg");
+}
+
+.bottom__form {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media screen and (min-width: 577px) {
+  .bottom__form {
+    max-width: 380px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bottom__form {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.bottom__email {
+  flex-grow: 3;
+  flex-basis: 180px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 40px;
+  font-style: italic;
+  color: #cccccc;
+  border: 1px solid #cccccc;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .bottom__email {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+}
+
+.bottom__btn {
+  flex-grow: 2;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 40px;
+  color: #ffffff;
+  background-color: #95e1d3;
+  transition: all .5s;
+  border: 1px solid #cccccc;
+  border-left: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .bottom__btn {
+    flex-grow: 1;
+  }
+}
+
+.bottom__btn:hover {
+  color: #95e1d3;
+  background-color: #ffffff;
+}
+
+.sign {
+  border-top: 1px solid #e5e5e5;
+  height: 60px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  line-height: 60px;
+  color: #333333;
+}
+
+.sign__link {
+  text-decoration: none;
+  color: #f38181;
+  transition: all .5s;
+}
+
+.sign__link:hover {
+  text-decoration: underline;
 }
