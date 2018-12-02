@@ -5,30 +5,12 @@
       <rdf:Description rdf:about=""/>
    </rdf:RDF>
 </x:xmpmeta>
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                           
 <?xpacket end="w"?></metadata>
 <defs>
     <style>
+      svg {
+        cursor: pointer;
+      }
       .cls-1 {
         fill: #fff;
         fill-rule: evenodd;

@@ -550,13 +550,89 @@ html {
   background-color: #f38181;
 }
 
-.inside-image__social:hover .inside-image__logo {
+.inside-image__social:hover .inside-image__social-logo {
   fill: #ffffff;
 }
 
 .inside-image__social-logo {
   fill: #f38181;
   transition-duration: 0.25s;
+}
+
+.what-we-do {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.what-we-do__container {
+  width: 50%;
+  padding-right: 30px;
+}
+
+.what-we-do__container--accordion {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.what-we-do__picture {
+  height: 300px;
+  background: url("../img/Layer-43.jpg") 30% 50% no-repeat;
+  background-size: cover;
+}
+
+.what-we-do__input {
+  position: absolute;
+  left: -9999px;
+}
+
+.what-we-do__label {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+}
+
+.what-we-do__header {
+  margin-left: 10px;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.what-we-do__tick-icon {
+  height: 12px;
+}
+
+.what-we-do__polyline {
+  fill: none;
+  stroke: #cccccc;
+  stroke-width: 15;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.what-we-do__txt-container {
+  position: relative;
+  height: 130px;
+  padding: 15px;
+  overflow-y: scroll;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+}
+
+.what-we-do__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: #999999;
 }
 
 .stat {

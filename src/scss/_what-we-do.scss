@@ -1,0 +1,75 @@
+.what-we-do {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__container {
+    width: 50%;
+    padding-right: 30px;
+
+    &--accordion {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  &__picture {
+    height: $what-we-do-height;
+    background: url("../img/Layer-43.jpg") 30% 50% no-repeat;
+    background-size: cover;
+  }
+
+  &__input {
+    position: absolute;
+    left: -9999px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid $light-gray;
+    cursor: pointer;
+  }
+
+  &__header {
+    margin-left: 10px;
+    margin-right: auto;
+    font-family: $bold-family;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-black;
+  }
+
+  &__tick-icon {
+    height: 12px;
+  }
+
+  &__polyline {
+    fill: none;
+    stroke: #cccccc;
+    stroke-width: 15;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  &__txt-container {
+    position: relative;
+    height: 130px;
+    padding: 15px;
+    overflow-y: scroll;
+    border: 1px solid $light-gray;
+    border-top: none;
+  }
+
+  &__text {
+    font-family: $roboto-family;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: $par-color;
+  }
+}
