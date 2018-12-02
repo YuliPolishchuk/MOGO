@@ -1,4 +1,6 @@
 .title {
+  margin: 0 auto;
+  max-width: 1000px;
   text-align: center;
 
   &__italic {
@@ -6,6 +8,7 @@
     font-size: 1.5rem;
     line-height: 1.5rem;
     color: $color-black;
+    text-transform: capitalize;
   }
 
   &__bold {
@@ -30,7 +33,7 @@
   }
 
   &__text {
-    margin-bottom: 90px;
+    padding-bottom: 90px;
     font-family: $roboto-family;
     font-size: 0.9375rem;
     line-height: 1.5rem;
