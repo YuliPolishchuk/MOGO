@@ -5,38 +5,37 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MOGO</title>
 </head>
 <body>
-  <header>
-    <!-- ЮЛЯ -->
-    <nav>
-      <ul class="menu">
-        <li class="menu__item"><a href="" class="menu__link"></a></li>
-        <li class="menu__item"><a href="" class="menu__link"></a></li>
-        <li class="menu__item"><a href="" class="menu__link"></a></li>
-        <li class="menu__item"><a href="" class="menu__link"></a></li>
-        <li class="menu__item"><a href="" class="menu__link"></a></li>
-        <li class="menu__item"><a href="" class="menu__link"></a></li>
-        <li class="menu__item"><a href="" class="menu__link"></a></li>
-      </ul>
-    </nav>
-
-    <p>Creative template</p>
-
-    <h1>Welcome to mogo</h1>
-
-    <a href="" class="btn"></a>
-
-    <ul class="list">
-      <li class="list__item"><a href="" class="list__link"></a></li>
-      <li class="list__item"><a href="" class="list__link"></a></li>
-      <li class="list__item"><a href="" class="list__link"></a></li>
-      <li class="list__item"><a href="" class="list__link"></a></li>
-    </ul>
-
-  </header>
+    <header class="header">
+        <nav class="header__nav">
+          <img src="img/header__logo.png" alt="logo">
+          <ul class="menu">
+            <li class="menu__item"><a href="" class="menu__link">ABOUT</a></li>
+            <li class="menu__item"><a href="" class="menu__link">SERVICE</a></li>
+            <li class="menu__item"><a href="" class="menu__link">WORK</a></li>
+            <li class="menu__item"><a href="" class="menu__link">BLOG</a></li>
+            <li class="menu__item"><a href="" class="menu__link">CONTACT</a></li>
+            <li class="menu__item"><a href="" class="menu__link"><img src="img/header__shop.png" alt="shop"></a></li>
+            <li class="menu__item"><a href="" class="menu__link"><img src="img/header__search.png" alt="search"></a></li>
+          </ul>
+        </nav>
+        <div class="header__center">
+          <p class="header__text">Creative template</p>
+          <h1 class="header__title">Welcome to mogo</h1>
+          <a href="#" class="header__btn">Learn more</a>
+        </div>
+    
+        <ul class="list">
+          <li class="list__item"><a href="" class="list__link"><span>01</span>INTRO</a></li>
+          <li class="list__item"><a href="" class="list__link"><span>02</span>WORK</a></li>
+          <li class="list__item"><a href="" class="list__link"><span>03</span>ABOUT</a></li>
+          <li class="list__item"><a href="" class="list__link"><span>04</span>CONTACTS</a></li>
+        </ul>
+      </header>
 
   <main>
     <section id="about">
@@ -59,8 +58,28 @@
       </div>
     </section>  
 
-    <div id="stat">
-        <!-- Сергей -->
+    <div class="stat back--pale-blue">
+<!-- Сергей -->
+      <div class="stat__item">
+        <span class="stat__number count">42</span>
+        <p class="stat__text">Web design project</p>
+      </div>      
+      <div class="stat__item">
+        <span class="stat__number count">123</span>
+        <p class="stat__text">Happy client</p>
+      </div>
+      <div class="stat__item">
+        <span class="stat__number count">15</span>
+        <p class="stat__text">Award winner</p>
+      </div>
+      <div class="stat__item">
+        <span class="stat__number count">99</span>
+        <p class="stat__text">Cup of coffee</p>
+      </div>
+      <div class="stat__item">
+        <span class="stat__number count">24</span>
+        <p class="stat__text">Members</p>
+      </div>
     </div>
 
     <section id="service">
@@ -101,20 +120,40 @@
       </div>
 
     </section>
-
     <div class="back back--grey">
-        <div class="wrap">
-          <div class="slider">
-            <div class="slider__image">
+        <div class="slider">
+          <div class="slider__item slider__fade">
+            <div class="slider__image slider__image--border">
               <img src="img/slaider__quate.png" alt="icon-like">
             </div>
             <div class="slider__content">
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"</p>
-              <h3>Jon Doe</h3>
+              <p class="slider__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"</p>
+              <h3 class="slider__title">Jon Doe</h3>
             </div>
           </div>
+          <div class="slider__item slider__fade">
+              <div class="slider__image slider__image--border">
+                <img src="img/slaider__quate.png" alt="icon-like">
+              </div>
+              <div class="slider__content">
+                <p class="slider__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation"</p>
+                <h3 class="slider__title">Jon Doe</h3>
+              </div>
+          </div>
+          <div class="slider__item slider__fade">
+              <div class="slider__image slider__image--border">
+                <img src="img/slaider__quate.png" alt="icon-like">
+              </div>
+              <div class="slider__content">
+                <p class="slider__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis "</p>
+                <h3 class="slider__title">Jon Doe</h3>
+              </div>
+          </div>
+            <a class="slider__prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="slider__next" onclick="plusSlides(1)">&#10095</a>
         </div>
       </div>
+    
   
 
     <section id="team">
@@ -156,28 +195,87 @@
 
     </section>
 
-    <div class="back">
-      <div class="slider">
-        <!-- ЮЛЯ -->
-        <!-- слайдер с цитатами и картинками -->
+    <div class="back back--white">
+        <div class="slider">
+          <div class="slider__itemSec slider__fade">
+            <div class="slider__image">
+              <img src="img/testimonial.png" alt="icon">
+            </div>
+            <div class="slider__content">
+              <p class="slider__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"</p>
+              <h3 class="slider__title">Joshua Earle</h3>
+            </div>
+          </div>
+          <div class="slider__itemSec slider__fade">
+              <div class="slider__image">
+                <img src="img/testimonial.png" alt="icon">
+              </div>
+              <div class="slider__content">
+                <p class="slider__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporut labore et dolore magna aliqua. Ut enim ad minim veniam, quis "</p>
+                <h3 class="slider__title">Joshua Earle</h3>
+              </div>
+            </div>
+            <div class="slider__itemSec slider__fade">
+                <div class="slider__image">
+                  <img src="img/testimonial.png" alt="icon">
+                </div>
+                <div class="slider__content">
+                  <p class="slider__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utad minim veniam,  exercitation"</p>
+                  <h3 class="slider__title">Joshua Earle</h3>
+                </div>
+              </div>
+          <a class="slider__prev" onclick="plusSlidesSec(-1)">&#10094</a>
+          <a class="slider__next" onclick="plusSlidesSec(1)">&#10095</a>
+        </div>
       </div>
-    </div>
 
     <section id="clients">
-      <!-- Сергей -->
-      <div class="title">
-        <p class="title__italic">What</p>
-        <h2 class="title__bold">Work</h2>
-      </div>
-      
-      <div>
-        <!-- 4 блока с картинкой и текстом. Отзывы клиентов -->
-        <div class="comments"></div>
-        <div class="comments"></div>
-        <div class="comments"></div>
-        <div class="comments"></div>
-      </div>
+<!-- Сергей -->
+      <div class="back back--clients">
 
+          <div class="wrap">
+            <div class="title">
+              <p class="title__italic">Happy clients</p>
+              <h2 class="title__bold">What people say</h2>
+            </div>
+        
+            <div class="comments">
+              <div class="comments__item">
+                <div class="comments__pic comments__pic--dix"></div>
+                <div class="comments__block">
+                  <h3 class="comments__name">Matthew Dix</h3>
+                  <p class="comments__position">Graphic Design</p>
+                  <p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dicta voluptates ad repudiandae voluptas commodi, rerum, odit, mollitia iusto vero sapiente aliquam eius, quae reiciendis ipsam architecto et libero hic!</p>
+                </div>
+              </div>
+              <div class="comments__item">
+                <div class="comments__pic comments__pic--castillo"></div>
+                <div class="comments__block">
+                  <h3 class="comments__name">Jaelynn Castillo </h3>
+                  <p class="comments__position">Graphic Design</p>
+                  <p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dicta voluptates ad repudiandae voluptas commodi, rerum, odit, mollitia iusto vero sapiente aliquam eius, quae reiciendis ipsam architecto et libero hic!</p>
+                </div>
+              </div>
+              <div class="comments__item">
+                <div class="comments__pic comments__pic--karvounis"></div>
+                <div class="comments__block">
+                  <h3 class="comments__name">Nick Karvounis</h3>
+                  <p class="comments__position">Graphic Design</p>
+                  <p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dicta voluptates ad repudiandae voluptas commodi, rerum, odit, mollitia iusto vero sapiente aliquam eius, quae reiciendis ipsam architecto et libero hic!</p>
+                </div>
+              </div>
+              <div class="comments__item">
+                <div class="comments__pic comments__pic--petrucci"></div>
+                <div class="comments__block">
+                  <h3 class="comments__name">Mike Petrucci</h3>
+                  <p class="comments__position">Graphic Design</p>
+                  <p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dicta voluptates ad repudiandae voluptas commodi, rerum, odit, mollitia iusto vero sapiente aliquam eius, quae reiciendis ipsam architecto et libero hic!</p>
+                </div>
+              </div>
+            </div>    
+          </div>
+
+      </div>
     </section>
 
     <section id="blog">
@@ -206,5 +304,12 @@
     <!-- СЕРГЕЙ -->
     
   </footer>
+
+<!-- JS -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="js/count.js"></script>
+  <script src="js/script.js"></script>
+<!-- JS -->
 </body>
 </html>
