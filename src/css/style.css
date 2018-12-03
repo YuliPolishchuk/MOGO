@@ -23,6 +23,10 @@ html {
   margin: 0;
 }
 
+.wrap--no-bottom-padding {
+  padding-bottom: 0;
+}
+
 .title {
   margin: 0 auto;
   max-width: 1000px;
@@ -254,16 +258,6 @@ html {
   position: relative;
 }
 
-.header__title::after {
-  content: "";
-  position: absolute;
-  left: 45%;
-  bottom: -25px;
-  height: 2px;
-  width: 60px;
-  background: #ffffff;
-}
-
 .header__text {
   font-family: "Kaushan Script", cursive;
   font-size: 2.5rem;
@@ -359,6 +353,11 @@ html {
   background-color: #f8f8f8;
 }
 
+.back--design {
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../img/Layer-45.jpg") 50% 50% no-repeat;
+  background-size: cover;
+}
+
 .back--clients {
   background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../img/Layer-53.jpg");
   background-repeat: no-repeat;
@@ -372,6 +371,43 @@ html {
 
 .back--nopadding {
   padding: 0;
+}
+
+.tablet-design {
+  position: relative;
+  margin: 0 auto;
+  left: -30px;
+  background: url("../img/png/tablet.png") 50% 50% no-repeat;
+  background-size: cover;
+  width: 479px;
+  height: 583px;
+}
+
+.tablet-design::after {
+  right: -135px;
+  bottom: -70px;
+  width: 274px;
+  height: 476px;
+}
+
+.tablet-design::after {
+  position: absolute;
+  content: "";
+  background: url("../img/png/iphone.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .tablet-design {
+    width: 62.3698vw;
+    height: 75.91147vw;
+  }
+  .tablet-design::after {
+    right: -17.57813vw;
+    bottom: -9.11458vw;
+    width: 35.67709vw;
+    height: 61.97917vw;
+  }
 }
 
 .slider {
@@ -525,18 +561,13 @@ html {
 }
 
 .images-row--our-work {
-  flex-wrap: wrap;
   background-color: #333333;
 }
 
 .images-row__container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   width: 50%;
-}
-
-.images-row__container--quarter {
-  width: 25%;
 }
 
 .images-row__image {
@@ -586,7 +617,9 @@ html {
 
 .images-row__image--work {
   width: 50%;
-  height: 20.3125vw;
+  height: 10.15625vw;
+  flex-grow: 1;
+  flex-basis: 50%;
 }
 
 .images-row__image--work-1 {
@@ -606,18 +639,16 @@ html {
 }
 
 .images-row__image--work-high {
-  height: 40.625vw;
-  width: 25%;
+  height: 20.3125vw;
+  flex-basis: 100%;
   background-image: url("../img/Layer-34.jpg");
 }
 
 .images-row__image--work-5 {
-  width: 100%;
   background-image: url("../img/Layer-31.jpg");
 }
 
 .images-row__image--work-6 {
-  width: 100%;
   background-image: url("../img/Layer-32.jpg");
 }
 
@@ -650,6 +681,38 @@ html {
   line-height: 0.9375rem;
   color: #999999;
   text-align: center;
+}
+
+@media screen and (min-width: 451px) and (max-width: 991px) {
+  .images-row--our-work {
+    flex-direction: column;
+  }
+  .images-row__container {
+    width: 100%;
+    height: 81.25vw;
+  }
+  .images-row__image--work {
+    height: 40.625vw;
+  }
+  .images-row__image--work-high {
+    height: 81.25vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .images-row--our-work {
+    flex-direction: column;
+  }
+  .images-row__container {
+    width: 100%;
+  }
+  .images-row__image--work {
+    width: 100%;
+    height: 81.25vw;
+  }
+  .images-row__image--work-high {
+    height: 162.5vw;
+  }
 }
 
 .gradient {
@@ -740,16 +803,17 @@ html {
 
 .what-we-do {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .what-we-do__container {
-  width: 50%;
   padding-right: 30px;
+  flex-grow: 1;
+  flex-basis: 50%;
 }
 
 .what-we-do__container--accordion {
   padding: 0;
+  height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -844,12 +908,23 @@ html {
 .what-we-do__text-visible::-webkit-scrollbar-thumb {
   background: #95e1d3;
   border-radius: 2.5px;
-
 }
 
 .what-we-do__text-visible::-webkit-scrollbar-track {
   background: #f5f5f5;
   border-radius: 2.5px;
+}
+
+@media screen and (max-width: 767px) {
+  .what-we-do {
+    flex-direction: column;
+  }
+  .what-we-do__container {
+    padding: 0;
+  }
+  .what-we-do__container--accordion {
+    margin-top: 20px;
+  }
 }
 
 .map {
@@ -871,97 +946,7 @@ html {
 }
 
 .map__open::before {
-
   content: "";
-  left: 0;
-  bottom: -20px;
-  width: 60px;
-  height: 3px;
-  background-color: #f38181;
-}
-
-.comments__text {
-  font-size: 0.94rem;
-  line-height: 1.5rem;
-  font-family: "Roboto", sans-serif;
-  color: #333333;
-}
-
-@media screen and (max-width: 320px) {
-  .comments__text {
-    text-align: justify;
-  }
-}
-
-.post {
-  padding: 45px 10px 0 20px;
-  font-size: 0;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-@media screen and (min-width: 1200px) {
-  .post {
-    justify-content: space-between;
-  }
-}
-
-.post__item {
-  display: inline-block;
-  width: 290px;
-  text-align: left;
-  padding: 0 10px;
-  margin-bottom: 50px;
-}
-
-@media screen and (min-width: 403.2px) {
-  .post__item {
-    width: 340px;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .post__item {
-    width: 380px;
-  }
-}
-
-.post__pic {
-  position: relative;
-  width: 290px;
-  height: 240px;
-  margin-bottom: 15px;
-  background-image: url("../img/Layer-54.jpg");
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media screen and (min-width: 403.2px) {
-  .post__pic {
-    width: 340px;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .post__pic {
-    width: 380px;
-  }
-}
-
-.post__pic--laptop {
-  background-image: url("../img/Layer-55.jpg");
-  background-position: center;
-}
-
-.post__pic--tablet {
-  background-image: url("../img/Layer-57.jpg");
-  background-position: center;
-}
-
-.post__block {
   position: absolute;
   background: #f38181;
   -webkit-transform: translate(-50%, -2px);

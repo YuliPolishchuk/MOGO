@@ -1,13 +1,14 @@
 .what-we-do {
   display: flex;
-  flex-wrap: wrap;
 
   &__container {
-    width: 50%;
     padding-right: 30px;
+    flex-grow: 1;
+    flex-basis: 50%;
 
     &--accordion {
       padding: 0;
+      height: $what-we-do-height;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -104,6 +105,18 @@
       &::-webkit-scrollbar-track {
         background: $scrollbar-track;
         border-radius: 2.5px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $s - 1) {
+    flex-direction: column;
+
+    &__container {
+      padding: 0;
+
+      &--accordion {
+        margin-top: 20px;
       }
     }
   }
