@@ -1,13 +1,14 @@
 .what-we-do {
   display: flex;
-  flex-wrap: wrap;
 
   &__container {
-    width: 50%;
     padding-right: 30px;
+    flex-grow: 1;
+    flex-basis: 50%;
 
     &--accordion {
       padding: 0;
+      height: $what-we-do-height;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -93,18 +94,30 @@
       height: $what-we-do-height - (3 * 50px + 20px + 2 * 15px);
       padding-right: 10px;
       overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: $color-sky;
+        border-radius: 2.5px;
+      }
+      &::-webkit-scrollbar-track {
+        background: $scrollbar-track;
+        border-radius: 2.5px;
+      }
     }
   }
-}
 
-::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-thumb {
-  background: $color-sky;
-  border-radius: 2.5px;
-}
-::-webkit-scrollbar-track {
-  background: $scrollbar-track;
-  border-radius: 2.5px;
+  @media screen and (max-width: $s - 1) {
+    flex-direction: column;
+
+    &__container {
+      padding: 0;
+
+      &--accordion {
+        margin-top: 20px;
+      }
+    }
+  }
 }
