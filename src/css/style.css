@@ -1007,21 +1007,261 @@ html {
   background-image: url("../img/SVG/SPEECH-BUBBLE-2.svg");
 }
 
+.blogs {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 576px) {
+  .blogs {
+    width: 300px;
+  }
+}
+
+.blogs__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.blogs__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.blogs__item:last-child {
+  margin-bottom: 0;
+}
+
+.blogs__images {
+  width: 120px;
+  height: 80px;
+  flex-basis: 120px;
+  flex-grow: 1;
+}
+
+.blogs__text {
+  flex-grow: 2;
+  margin-left: 20px;
+}
+
+.blogs__advt {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.blogs__date {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 0.8125rem;
+  line-height: 1.5rem;
+  color: #999999;
+}
+
+.insta__tittle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.insta__grid {
+  display: grid;
+  grid-template-columns: 88px 88px 88px;
+  grid-template-rows: 88px 88px 88px;
+  grid-template-areas: "view couple road" "nigt wood mount" "tunnel snail see";
+  grid-gap: 2px 2px;
+  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 576px) {
+  .insta__grid {
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 0;
+  }
+}
+
+.insta__pic {
+  width: 88px;
+  height: 88px;
+}
+
+@media screen and (max-width: 576px) {
+  .insta__pic {
+    width: 112px;
+    height: 112px;
+  }
+}
+
+.insta__pic--view {
+  grid-area: view;
+}
+
+.insta__pic--couple {
+  grid-area: couple;
+}
+
+.insta__pic--road {
+  grid-area: road;
+}
+
+.insta__pic--nigt {
+  grid-area: nigt;
+}
+
+.insta__pic--wood {
+  grid-area: wood;
+}
+
+.insta__pic--mount {
+  grid-area: mount;
+}
+
+.insta__pic--tunnel {
+  grid-area: tunnel;
+}
+
+.insta__pic--snail {
+  grid-area: snail;
+}
+
+.insta__pic--see {
+  grid-area: see;
+}
+
+.insta__link {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration: none;
+  color: #333333;
+}
+
+.sign {
+  border-top: 1px solid #e5e5e5;
+  height: 60px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  line-height: 60px;
+  color: #333333;
+}
+
+.sign__link {
+  text-decoration: none;
+  color: #f38181;
+  transition: all .5s;
+}
+
+.sign__link:hover {
+  text-decoration: underline;
+}
+
 .bottom {
   margin-bottom: 70px;
   padding: 0 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 992px) {
+  .bottom {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .bottom__item {
-  flex-grow: 1;
   text-align: left;
+  flex-basis: 300px;
+  margin-right: 30px;
+}
+
+.bottom__item:last-child {
+  margin-right: 0;
 }
 
 .bottom__item--mogo {
-  flex-basis: 300px;
+  flex-grow: 2;
+}
+
+@media screen and (max-width: 992px) {
+  .bottom__item--mogo {
+    flex-basis: 900px;
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bottom__item--mogo {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+}
+
+.bottom__item--blogs {
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .bottom__item--blogs {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bottom__item--blogs {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-right: 0;
+  }
+}
+
+.bottom__item--insta {
+  flex-basis: 268px;
+}
+
+@media screen and (max-width: 992px) {
+  .bottom__item--insta {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bottom__item--insta {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bottom__item {
+    flex-basis: 300px;
+  }
 }
 
 .bottom__logo {
@@ -1038,7 +1278,22 @@ html {
   font-size: 0.9375rem;
   line-height: 1.5rem;
   color: #cccccc;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
+}
+
+@media screen and (max-width: 992px) {
+  .bottom__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bottom__social {
+    display: block;
+  }
 }
 
 .bottom__followers {
@@ -1050,6 +1305,18 @@ html {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
+}
+
+@media screen and (max-width: 992px) {
+  .bottom__followers {
+    border: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bottom__followers {
+    border-bottom: 1px solid #e5e5e5;
+  }
 }
 
 .bottom__simple {
@@ -1136,8 +1403,7 @@ html {
   flex-grow: 3;
   flex-basis: 180px;
   height: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 5px;
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 0.9375rem;
@@ -1159,6 +1425,7 @@ html {
 .bottom__btn {
   flex-grow: 2;
   height: 40px;
+  padding: 0 5px;
   font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
@@ -1181,24 +1448,4 @@ html {
 .bottom__btn:hover {
   color: #95e1d3;
   background-color: #ffffff;
-}
-
-.sign {
-  border-top: 1px solid #e5e5e5;
-  height: 60px;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.875rem;
-  line-height: 60px;
-  color: #333333;
-}
-
-.sign__link {
-  text-decoration: none;
-  color: #f38181;
-  transition: all .5s;
-}
-
-.sign__link:hover {
-  text-decoration: underline;
 }

@@ -3,15 +3,89 @@
   padding: 0 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: flex-end; 
+
+  @media screen and (max-width: $m) {
+    justify-content: space-evenly;
+  } 
+
+  @media screen and (max-width: $xs) {
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  // @media screen and (max-width: $s) {
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: column;
+  // } 
+
+  // @media screen and (max-width: $m) {
+  //   flex-direction: column;
+  //   align-items: center; 
+  // } 
   
   &__item {
-    flex-grow: 1;
     text-align: left;
+    flex-basis: 300px;
+    margin-right: 30px; 
+
+    // @media screen and (max-width: $s) {
+    //   margin-right: 0;
+    // }   
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     &--mogo {
-    flex-basis: 300px;
+      flex-grow: 2;
+      
+      @media screen and (max-width: $m) {
+        flex-basis: 900px;
+        order: 1;
+      } 
+
+      @media screen and (max-width: $s) {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
     }
+
+    &--blogs {
+      flex-grow: 1;
+
+      @media screen and (max-width: $m) {
+        margin-bottom: 30px;
+        margin-right: 0;
+      }
+
+      @media screen and (max-width: $s) {
+        flex-grow: 1;
+        flex-basis: 0;
+        margin-right: 0;
+      }
+    }
+
+    &--insta {
+      flex-basis: 268px;
+
+      @media screen and (max-width: $m) {
+        margin-bottom: 30px;
+      }
+
+      @media screen and (max-width: $s) {
+        flex-grow: 1;
+        flex-basis: 0;
+        margin-right: 0;
+      }
+    }
+  
+    @media screen and (max-width: $xs) {
+      flex-basis: 300px;
+    }
+
   }
 
   &__logo {
@@ -28,7 +102,21 @@
     font-size: 0.9375rem;
     line-height: 1.5rem;
     color: $lighter-gray;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
+  }
+
+  &__social {
+    
+    @media screen and (max-width: $m) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    @media screen and (max-width: $s) {
+      display: block;
+    }
   }
 
   &__followers {
@@ -40,6 +128,14 @@
     margin-bottom: 20px; 
     padding-bottom: 20px;
     border-bottom: 1px solid $light-gray;
+
+    @media screen and (max-width: $m) {
+      border:0;
+    } 
+
+    @media screen and (max-width: $s) {
+      border-bottom: 1px solid $light-gray;
+    }
   }
 
   &__simple {
@@ -122,8 +218,7 @@
     flex-grow: 3;
     flex-basis: 180px;
     height: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 5px;
     background-color: $color-white;
     font-family: $roboto-family;
     font-size: 0.9375rem;
@@ -143,6 +238,7 @@
   &__btn {
     flex-grow: 2;
     height: 40px;
+    padding: 0 5px;
     font-family: $bold-family;
     font-size: 0.875rem;
     font-weight: bold;
