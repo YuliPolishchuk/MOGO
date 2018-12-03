@@ -26,7 +26,7 @@
     }
   }
 
-  &__text{
+  &__text {
     font-family: $roboto-family;
     font-style: italic;
     font-weight: 100;
@@ -83,6 +83,7 @@
     animation-duration: 1.5s;
   }
 }
+
 @keyframes fade {
   from {
     opacity: 0.4
@@ -90,4 +91,53 @@
   to {
     opacity: 1
   }
+}
+
+@media screen and (max-width:950px) {
+  .slider {
+    &__image {
+      margin-left: 20px;
+    }
+
+    &__item {
+      width: 80%;
+    }
+
+    &__itemSec {
+      width: 80%;
+    }
+
+    &__text {
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+    }
+    &__content {
+      margin: 0px 20px;
+    }
+  }
+}
+
+@media screen and (max-width:560px) {
+  .slider {
+    &__item {
+      flex-direction: column;
+    }
+    &__itemSec {
+      flex-direction: column;
+    }
+    &__content {
+      margin: 10px 20px;
+    }
+
+    &__image {
+      img {
+      width: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+    &--border {
+      padding: 20px;
+    }
+  }
+}
 }
