@@ -2,15 +2,30 @@
   display: flex;
   justify-content: space-between;
 
+  &--our-work {
+    flex-wrap: wrap;
+    background-color: $color-lightblack;
+  }
+
+  &__container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+
+    &--quarter {
+      width: 25%;
+    }
+  }
+
   &__image {
     position: relative;
-    width: 22vw;
-    max-width: 380px;
     background: 50% 50% no-repeat;
     background-size: cover;
     transition-duration: 0.5s;
 
     &--about {
+      width: 22vw;
+      max-width: 380px;
       height: 14.4737vw;
       max-height: 250px;
 
@@ -28,6 +43,8 @@
     }
 
     &--team {
+      width: 22vw;
+      max-width: 380px;
       height: 27.2105vw;
       max-height: 470px;
 
@@ -44,14 +61,51 @@
       }
     }
 
+    &--work {
+      width: 50%;
+      height: 20.3125vw;
+      
+      &-1 {
+        background-image: url("../img/Layer-26.jpg");
+      }
+      
+      &-2 {
+        background-image: url("../img/Layer-35.jpg");
+      }
+      
+      &-3 {
+        background-image: url("../img/Layer-33.jpg");
+      }
+      
+      &-4 {
+        background-image: url("../img/Layer-29.jpg");
+      }
+
+      &-high {
+        height: 40.625vw;
+        width: 25%;
+        background-image: url("../img/Layer-34.jpg");
+      }
+      
+      &-5 {
+        width: 100%;
+        background-image: url("../img/Layer-31.jpg");
+      }
+      
+      &-6 {
+        width: 100%;
+        background-image: url("../img/Layer-32.jpg");
+      }
+    }
+
     &--hover {
-      &:hover {
+      &:hover .gradient {
+          opacity: 1;
+      }
+
+      &-shadow:hover {
         transform: translate(-8px, -8px);
         box-shadow: 8px 8px 0 0 $color-sky;
-
-        .gradient {
-          opacity: 1;
-        }
       }
     }
   }
