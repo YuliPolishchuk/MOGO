@@ -1,6 +1,27 @@
 .back {
-  padding:70px 0; 
+  padding: 70px 0;
+
   &--grey {
     background-color: $background-grey;
   }
+
+  &--clients {
+    background:
+      linear-gradient( 
+        rgba(255, 255, 255, 0.85),
+        rgba(255, 255, 255, 0.85)), 
+      url("../img/Layer-53.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover; 
+  }
+
+  &--pale-blue {
+    background-color: $color-sky;
+  }
+
+  &--nopadding {
+    padding: 0;
+  }
+  
 }
