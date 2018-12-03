@@ -6,17 +6,31 @@
     flex-direction: row;
   }
 
-  &__users-logo {
+  &__logo {
     margin: 0 auto;
     display: block;
+
+    &--picture {
+      margin-bottom: 10px;
+    }
   }
 
   &__span {
     font-family: $bold-family;
     font-size: 15px;
-    line-height: 25px;
+    line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
+    color: $color-white;
+  }
+
+  &__italic {
+    margin: 0 auto;
+    font-family: $roboto-family;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 300;
+    font-style: italic;
     color: $color-white;
   }
 
@@ -37,13 +51,13 @@
     &:hover {
       background-color: $color-red;
 
-      .inside-image__logo {
+      .inside-image__social-logo {
         fill: $color-white;
       }
     }
   }
 
-  &__logo {
+  &__social-logo {
     fill: $color-red;
     transition-duration: 0.25s;
   }
