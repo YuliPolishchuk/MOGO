@@ -1,6 +1,6 @@
 .map {
   position: relative;
-  height: 250px;
+  background-color: $background-grey;
 }
 
 .map__open {
@@ -56,4 +56,10 @@
   height: 100%;
   -webkit-filter: none;
   filter: none;
+}
+
+@media screen and (max-width:$xs) {
+  .map__open {
+    left: 40%;
+  }
 }
