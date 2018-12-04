@@ -1,7 +1,7 @@
 .wrap {
   margin: 0 auto;
   padding: 115px 0;
-  width: 70%;
+  width: calc(100% - 50px);
   max-width: 1200px;
 
   &--width100 {
@@ -18,5 +18,9 @@
   
   &--no-bottom-padding {
     padding-bottom: 0;
+  }
+
+  @media screen and (max-width: $xs - 1) {
+    width: calc(100% - 20px);
   }
 }

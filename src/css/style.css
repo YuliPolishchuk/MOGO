@@ -11,7 +11,7 @@ html {
 .wrap {
   margin: 0 auto;
   padding: 115px 0;
-  width: 70%;
+  width: calc(100% - 50px);
   max-width: 1200px;
 }
 
@@ -29,6 +29,12 @@ html {
 
 .wrap--no-bottom-padding {
   padding-bottom: 0;
+}
+
+@media screen and (max-width: 575px) {
+  .wrap {
+    width: calc(100% - 20px);
+  }
 }
 
 .title {
@@ -561,6 +567,7 @@ html {
 
 .images-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -582,10 +589,17 @@ html {
 }
 
 .images-row__image--about {
-  width: 22vw;
+  width: 29vw;
   max-width: 380px;
-  height: 14.4737vw;
+  height: 19.07895vw;
   max-height: 250px;
+}
+
+.images-row__image--team {
+  width: 29vw;
+  max-width: 380px;
+  height: 35.86842vw;
+  max-height: 470px;
 }
 
 .images-row__image--about-first {
@@ -598,13 +612,6 @@ html {
 
 .images-row__image--about-third {
   background-image: url("../img/Layer-41.jpg");
-}
-
-.images-row__image--team {
-  width: 22vw;
-  max-width: 380px;
-  height: 27.2105vw;
-  max-height: 470px;
 }
 
 .images-row__image--team-dix {
@@ -685,6 +692,45 @@ html {
   line-height: 0.9375rem;
   color: #999999;
   text-align: center;
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .images-row__image--about {
+    width: 42vw;
+    max-width: 380px;
+    height: 27.63158vw;
+    max-height: 250px;
+  }
+  .images-row__image--team {
+    width: 42vw;
+    max-width: 380px;
+    height: 51.94737vw;
+    max-height: 470px;
+  }
+  .images-row__image--about-third, .images-row__image--container-3 {
+    margin: 30px auto 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .images-row {
+    justify-content: center;
+  }
+  .images-row__image--about {
+    width: 380px;
+    max-width: 90vw;
+    height: 250px;
+    max-height: 59.21053vw;
+  }
+  .images-row__image--team {
+    width: 380px;
+    max-width: 90vw;
+    height: 470px;
+    max-height: 111.31579vw;
+  }
+  .images-row__image--about:not(:last-child), .images-row__image--container:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 451px) and (max-width: 991px) {
@@ -1427,7 +1473,7 @@ html {
   display: grid;
   grid-template-columns: 88px 88px 88px;
   grid-template-rows: 88px 88px 88px;
-  grid-template-areas: "view couple road" "nigt wood mount" "tunnel snail see";
+  grid-template-areas: "view couple road" "nigt wood mount" "tunnel snail see";
   grid-gap: 2px 2px;
   margin-bottom: 18px;
 }
