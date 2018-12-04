@@ -1,0 +1,135 @@
+.service {
+  position: relative;
+  font-size: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 1020px) {
+    justify-content: space-evenly;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $light-gray;
+
+    @media screen and (max-width: 1020px) {
+      top: 30%;
+    }
+
+    @media screen and (max-width: 680px) {
+      height: 0;
+    }
+  }
+
+  @media screen and (max-width: 1020px) {
+    &:after {
+      content: "";
+      position: absolute;
+      top: 70%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $light-gray;
+
+      @media screen and (max-width: 680px) {
+        height: 0;
+      }
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    font-size: 0;
+    display: flex;
+    flex-wrap: nowrap;
+
+    &--margin-bottom {
+      margin-bottom: 100px;
+    }
+
+    @media screen and (max-width: 680px) {
+      margin-bottom: 50px;
+
+      &:last-child {
+        margin-bottom: 0;        
+      }
+    }
+
+    @media screen and (min-width: 680px) {
+      max-width: 340px;
+    }
+  }
+
+  &__pic {
+    flex-basis: 32px;
+    width: 32px;
+    height: 32px;
+    flex-grow: 1;
+    margin-right: 28px;
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+  
+      &--photo {
+        background-image: url("../img/SVG/ALARM.svg");
+      }
+
+      &--line {
+        background-image: url("../img/SVG/LINE-GRAPH.svg");
+      }
+
+      &--computer {
+        background-image: url("../img/SVG/COMPUTER-OK.svg");
+      }
+
+      &--book {
+        background-image: url("../img/SVG/BOOK-2.svg");
+      }
+
+      &--home {
+        background-image: url("../img/SVG/HOME.svg");
+      }
+
+      &--digital {
+        background-image: url("../img/SVG/IMAGE.svg");
+      }
+  }
+
+  &__block {
+    flex-grow: 1;
+
+    @media screen and (min-width: 680px) {
+      flex-grow: 3;
+      flex-basis: 280px;
+    }
+
+    @media screen and (max-width: 540px) {
+      flex-grow: 3;
+      flex-basis: 240px;
+    }
+
+  }
+
+  &__title {
+    font-family: $bold-family;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: $color-lightblack;
+  }
+
+  &__text {
+    font-family: $roboto-family;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    color: $par-color;
+  }
+}

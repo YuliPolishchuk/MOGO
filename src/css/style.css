@@ -1082,6 +1082,156 @@ html {
   }
 }
 
+.service {
+  position: relative;
+  font-size: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1020px) {
+  .service {
+    justify-content: space-evenly;
+  }
+}
+
+.service:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #e5e5e5;
+}
+
+@media screen and (max-width: 1020px) {
+  .service:before {
+    top: 30%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .service:before {
+    height: 0;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .service:after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e5e5e5;
+  }
+}
+
+@media screen and (max-width: 1020px) and (max-width: 680px) {
+  .service:after {
+    height: 0;
+  }
+}
+
+.service__item {
+  display: inline-block;
+  font-size: 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.service__item--margin-bottom {
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 680px) {
+  .service__item {
+    margin-bottom: 50px;
+  }
+  .service__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .service__item {
+    max-width: 340px;
+  }
+}
+
+.service__pic {
+  flex-basis: 32px;
+  width: 32px;
+  height: 32px;
+  flex-grow: 1;
+  margin-right: 28px;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+}
+
+.service__pic--photo {
+  background-image: url("../img/SVG/ALARM.svg");
+}
+
+.service__pic--line {
+  background-image: url("../img/SVG/LINE-GRAPH.svg");
+}
+
+.service__pic--computer {
+  background-image: url("../img/SVG/COMPUTER-OK.svg");
+}
+
+.service__pic--book {
+  background-image: url("../img/SVG/BOOK-2.svg");
+}
+
+.service__pic--home {
+  background-image: url("../img/SVG/HOME.svg");
+}
+
+.service__pic--digital {
+  background-image: url("../img/SVG/IMAGE.svg");
+}
+
+.service__block {
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 680px) {
+  .service__block {
+    flex-grow: 3;
+    flex-basis: 280px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .service__block {
+    flex-grow: 3;
+    flex-basis: 240px;
+  }
+}
+
+.service__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.service__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  color: #999999;
+}
+
 .comments {
   position: relative;
   padding: 85px 35px 0;
