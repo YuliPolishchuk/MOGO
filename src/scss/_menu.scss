@@ -2,9 +2,16 @@
   display: flex;
   list-style-type: none;
   float: right;
- 
-  &__item{
+
+  &__icon {
+    display: flex;
+  }
+  &__item {
     margin-right: 30px;
+
+    & li:last-child {
+      margin-right: 0;
+    }
   }
 
   &__link {
@@ -19,6 +26,29 @@
     &:hover {
       color: $color-yellow;
       border-bottom: 3px solid $color-yellow;
+    }
+    &--icon:hover {
+      border-width: 0;
+    }
+  }
+}
+
+
+@media screen and (max-width: 830px) {
+  .menu {
+    justify-content: center;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .menu {
+    &__item {
+    margin-right: 10px;
+    }
+
+    &__link {
+      font-size: 0.6rem;
     }
   }
 }
