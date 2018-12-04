@@ -1,5 +1,38 @@
+@mixin image-width($value) {
+  &--about {
+    width: $value;
+    max-width: 380px;
+    height: $value * 250/380;
+    max-height: 250px;
+  }
+
+  &--team {
+    width: $value;
+    max-width: 380px;
+    height: $value * 470/380;
+    max-height: 470px;
+  }
+}
+
+@mixin image-xs-width($value) {
+  &--about {
+    width: 380px;
+    max-width: $value;
+    height: 250px;
+    max-height: $value * 250/380;
+  }
+
+  &--team {
+    width: 380px;
+    max-width: $value;
+    height: 470px;
+    max-height: $value * 470/380;
+  }
+}
+
 .images-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   &--our-work {
@@ -17,13 +50,9 @@
     background: 50% 50% no-repeat;
     background-size: cover;
     transition-duration: 0.5s;
+    @include image-width($image-team-about-width);
 
     &--about {
-      width: 22vw;
-      max-width: 380px;
-      height: 14.4737vw;
-      max-height: 250px;
-
       &-first {
         background-image: url("../img/Layer-44.jpg");
       }
@@ -38,11 +67,6 @@
     }
 
     &--team {
-      width: 22vw;
-      max-width: 380px;
-      height: 27.2105vw;
-      max-height: 470px;
-
       &-dix {
         background-image: url("../img/Layer-16.jpg");
       }
@@ -58,7 +82,7 @@
 
     &--work {
       width: 50%;
-      height: 10.15625vw;
+      height: $our-work-pic-height / 2;
       flex-grow: 1;
       flex-basis: 50%;
 
@@ -79,7 +103,7 @@
       }
 
       &-high {
-        height: 20.3125vw;
+        height: $our-work-pic-height;
         flex-basis: 100%;
         background-image: url("../img/Layer-34.jpg");
       }
@@ -126,6 +150,30 @@
     text-align: center;
   }
 
+  @media screen and (min-width: $xs) and (max-width: $s - 1) {
+    &__image {
+      @include image-width($image-team-about-width-s);
+
+      &--about-third,
+      &--container-3 {
+        margin: 30px auto 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: $xs) {
+    justify-content: center;
+
+    &__image {
+      @include image-xs-width($image-team-about-width-xs);
+
+      &--about:not(:last-child),
+      &--container:not(:last-child){
+        margin-bottom: 30px;
+      }
+    }
+  }
+
   @media screen and (min-width: 451px) and (max-width: $m - 1) {
     &--our-work {
       flex-direction: column;
@@ -133,15 +181,15 @@
 
     &__container {
       width: 100%;
-      height: 81.25vw;
+      height: $our-work-pic-height * 4;
     }
 
     &__image {
       &--work {
-        height: 40.625vw;
+        height: $our-work-pic-height * 2;
 
         &-high {
-          height: 81.25vw;
+          height: $our-work-pic-height * 4;
         }
       }
     }
@@ -159,10 +207,10 @@
     &__image {
       &--work {
         width: 100%;
-        height: 81.25vw;
+        height: $our-work-pic-height * 4;
 
         &-high {
-          height: 162.5vw;
+          height: $our-work-pic-height * 8;
         }
       }
     }
