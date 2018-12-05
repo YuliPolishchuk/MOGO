@@ -1670,7 +1670,7 @@ html {
   display: grid;
   grid-template-columns: 88px 88px 88px;
   grid-template-rows: 88px 88px 88px;
-  grid-template-areas: "view couple road" "nigt wood mount" "tunnel snail see";
+  grid-template-areas: "view couple road" "nigt wood mount" "tunnel snail see";
   grid-gap: 2px 2px;
   margin-bottom: 18px;
 }
