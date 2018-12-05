@@ -19,16 +19,16 @@
     height: 2px;
     background-color: $light-gray;
 
-    @media screen and (max-width: 1020px) {
+    @media screen and (max-width: 1070px) {
       top: 30%;
     }
 
-    @media screen and (max-width: 680px) {
+    @media screen and (max-width: 730px) {
       height: 0;
     }
   }
 
-  @media screen and (max-width: 1020px) {
+  @media screen and (max-width: 1070px) {
     &:after {
       content: "";
       position: absolute;
@@ -38,7 +38,7 @@
       height: 2px;
       background-color: $light-gray;
 
-      @media screen and (max-width: 680px) {
+      @media screen and (max-width: 730px) {
         height: 0;
       }
     }
@@ -54,7 +54,7 @@
       margin-bottom: 100px;
     }
 
-    @media screen and (max-width: 680px) {
+    @media screen and (max-width: 730px) {
       margin-bottom: 50px;
 
       &:last-child {
@@ -62,7 +62,7 @@
       }
     }
 
-    @media screen and (min-width: 680px) {
+    @media screen and (min-width: 730px) {
       max-width: 340px;
     }
   }

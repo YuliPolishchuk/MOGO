@@ -22,10 +22,6 @@
       width: 340px;
     }
 
-    @media screen and (min-width: $xs) {
-      width: 380px;
-    }
-
     @media screen and (max-width: $l) {
       margin-bottom: 50px;
 
@@ -47,10 +43,6 @@
 
     @media screen and (min-width: $xs*0.7) {
       width: 340px;
-    }
-
-    @media screen and (min-width: $xs) {
-      width: 380px;
     }
 
     &--laptop {

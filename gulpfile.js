@@ -37,6 +37,18 @@ gulp.task('default', ['watch']);
 gulp.task('build', function () {
   gulp.src('src/css/style.css')
     .pipe(gulp.dest('build/css'));
+  gulp.src('src/js/*.js')
+    .pipe(gulp.dest('build/js'));
+  gulp.src('src/img/*.png')
+    .pipe(gulp.dest('build/img'));
+  gulp.src('src/img/*.jpg') 
+    .pipe(gulp.dest('build/img'));
+  gulp.src('src/img/images/*.*') 
+    .pipe(gulp.dest('build/img/images'));
+  gulp.src('src/img/png/*.*') 
+    .pipe(gulp.dest('build/img/png'));
+  gulp.src('src/img/svg/*.*') 
+    .pipe(gulp.dest('build/img/svg'));
   gulp.src('src/index.html')
     .pipe(gulp.dest('build'));
 });

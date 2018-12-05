@@ -11,8 +11,13 @@
     &:last-child {
       border-right: 1px solid rgba(255,255,255,0.35);
     }
-     @media screen and (max-width: $s) {
+    
+    @media screen and (max-width: $m) {
       padding: 45px 0;
+    }
+
+    @media screen and (max-width: $xs) {
+      padding: 20px 0;
     }
   }
   
