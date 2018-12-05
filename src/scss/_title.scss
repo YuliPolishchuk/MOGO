@@ -43,4 +43,22 @@
       padding-bottom: 0;
     }
   }
+
+  @media screen and (max-width: $xs - 1) {
+    &__bold {
+      margin-bottom: 60px;
+
+      &::after {
+        bottom: -32px;
+      }
+    }
+
+    &__text {
+      padding-bottom: 60px;
+
+      &--zero-padding {
+        padding-bottom: 0;
+      }
+    }
+  }
 }
