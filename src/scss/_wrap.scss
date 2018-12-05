@@ -4,9 +4,9 @@
   width: calc(100% - 50px);
   max-width: 1200px;
 
-  &--width100 {
-    width: 100%;
-  }
+  // &--width100 {
+  //   width: 100%;
+  // }
 
   &--no-margin {
     margin: 0;
@@ -27,5 +27,9 @@
 
   &--no-bottom-padding {
     padding-bottom: 0;
+  }
+
+  &--no-padding {
+    padding: 0;
   }
 }
