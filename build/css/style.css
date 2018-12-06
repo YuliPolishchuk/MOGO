@@ -1295,27 +1295,27 @@ html {
 }
 
 .service__pic--photo {
-  background-image: url("../img/SVG/ALARM.svg");
+  background-image: url("../img/svg/ALARM.svg");
 }
 
 .service__pic--line {
-  background-image: url("../img/SVG/LINE-GRAPH.svg");
+  background-image: url("../img/svg/LINE-GRAPH.svg");
 }
 
 .service__pic--computer {
-  background-image: url("../img/SVG/COMPUTER-OK.svg");
+  background-image: url("../img/svg/COMPUTER-OK.svg");
 }
 
 .service__pic--book {
-  background-image: url("../img/SVG/BOOK-2.svg");
+  background-image: url("../img/svg/BOOK-2.svg");
 }
 
 .service__pic--home {
-  background-image: url("../img/SVG/HOME.svg");
+  background-image: url("../img/svg/HOME.svg");
 }
 
 .service__pic--digital {
-  background-image: url("../img/SVG/IMAGE.svg");
+  background-image: url("../img/svg/IMAGE.svg");
 }
 
 .service__block {
@@ -1606,11 +1606,11 @@ html {
 }
 
 .post__sub--views {
-  background-image: url("../img/SVG/VIEW.svg");
+  background-image: url("../img/svg/VIEW.svg");
 }
 
 .post__sub--comments {
-  background-image: url("../img/SVG/SPEECH-BUBBLE-2.svg");
+  background-image: url("../img/svg/SPEECH-BUBBLE-2.svg");
 }
 
 .blogs {
@@ -1686,7 +1686,9 @@ html {
   display: grid;
   grid-template-columns: 88px 88px 88px;
   grid-template-rows: 88px 88px 88px;
-  grid-template-areas: "view couple road" "nigt wood mount" "tunnel snail see";
+  grid-template-areas: "view couple road"
+ "nigt wood mount"
+ "tunnel snail see";
   grid-gap: 2px 2px;
   margin-bottom: 18px;
 }
@@ -1956,35 +1958,35 @@ html {
 }
 
 .bottom__icon--fb {
-  background-image: url("../img/SVG/facebook.svg");
+  background-image: url("../img/svg/facebook.svg");
 }
 
 .bottom__icon--tw {
-  background-image: url("../img/SVG/twitter.svg");
+  background-image: url("../img/svg/twitter.svg");
 }
 
 .bottom__icon--ig {
-  background-image: url("../img/SVG/instagram.svg");
+  background-image: url("../img/svg/instagram.svg");
 }
 
 .bottom__icon--pt {
-  background-image: url("../img/SVG/pinterest.svg");
+  background-image: url("../img/svg/pinterest.svg");
 }
 
 .bottom__icon--gp {
-  background-image: url("../img/SVG/google-plus.svg");
+  background-image: url("../img/svg/google-plus.svg");
 }
 
 .bottom__icon--yt {
-  background-image: url("../img/SVG/youtube.svg");
+  background-image: url("../img/svg/youtube.svg");
 }
 
 .bottom__icon--dr {
-  background-image: url("../img/SVG/dribbble.svg");
+  background-image: url("../img/svg/dribbble.svg");
 }
 
 .bottom__icon--tb {
-  background-image: url("../img/SVG/tumblr.svg");
+  background-image: url("../img/svg/tumblr.svg");
 }
 
 .bottom__form {
