@@ -7,15 +7,15 @@
   
     img {
       width: 100%;
+      display: block;
     }
-  
-    img:hover {
+    
+    &__hover :hover {
       transition: 2s;
-      transform: scale(1.2);
+      transform: scale(1.1);
       display: block;
       cursor: pointer;
     }
-    
   }
   
   @media screen and (max-width:950px) {
