@@ -21,6 +21,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    text-decoration: none;
 
     &:last-child {
       margin-bottom: 0;      
@@ -44,7 +45,11 @@
     font-size: 0.75rem;
     line-height: 1.125rem;
     text-transform: uppercase;
-    color: $color-lightblack;    
+    color: $color-lightblack;
+
+    &:hover {
+      text-decoration: underline;
+    }    
   }
   
   &__date {

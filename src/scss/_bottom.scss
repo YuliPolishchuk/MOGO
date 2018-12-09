@@ -13,6 +13,7 @@
   @media screen and (max-width: $xs) {
     flex-direction: column;
     align-items: center;
+    padding: 0;
   } 
   
   &__item {
@@ -21,6 +22,10 @@
     margin-right: 30px; 
 
     &:last-child {
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: $xs) {
       margin-right: 0;
     }
 
@@ -88,6 +93,11 @@
     line-height: 1.5rem;
     color: $lighter-gray;
     margin-bottom: 45px;
+
+    @media screen and (max-width: $xs) {
+      text-align: justify;
+    }
+    
   }
 
   &__social {
