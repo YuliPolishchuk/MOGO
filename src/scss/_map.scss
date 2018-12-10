@@ -6,7 +6,8 @@
 .map__open {
   position: absolute;
   top: 20%;
-  left: 46%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 2;
   cursor: pointer;
   text-align: center;
@@ -34,6 +35,7 @@
   font-weight: 800;
   font-size: 1.2rem;
   margin-top: 10px;
+  text-align: center;
 }
 
 .map iframe {
@@ -58,14 +60,3 @@
   filter: none;
 }
 
-@media screen and (max-width:$xs) {
-  .map__open {
-    left: 40%;
-  }
-}
-
-@media screen and (max-width:400px) {
-  .map__open {
-    left: 34%;
-  }
-}
