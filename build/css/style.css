@@ -638,6 +638,7 @@ html {
   display: flex;
   flex-flow: column wrap;
   width: 50%;
+  height: 40vw;
 }
 
 .images-row__image {
